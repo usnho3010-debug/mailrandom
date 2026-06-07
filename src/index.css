@@ -1,0 +1,120 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #fffdf7;
+  --color-paper-strong: #f4ead8;
+  --color-ink: #14213d;
+  --color-ink-soft: #24385d;
+  --color-teal: #0f766e;
+  --color-blue: #227c9d;
+  --color-amber: #f4d35e;
+  --color-coral: #e85d04;
+  --color-coral-dark: #b94700;
+  --color-green: #2a9d8f;
+  --color-green-dark: #17695f;
+  --font-sans: Aptos, Bahnschrift, Trebuchet MS, sans-serif;
+  --font-display: Georgia, Cambria, serif;
+  --font-mono: Cascadia Mono, Consolas, monospace;
+  --shadow-soft: 0 12px 30px rgba(20, 33, 61, 0.08);
+  --shadow-brutal: 4px 4px 0 rgba(20, 33, 61, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    linear-gradient(90deg, rgba(20, 33, 61, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(20, 33, 61, 0.035) 1px, transparent 1px),
+    #fffdf7;
+  background-size: 28px 28px;
+  color: #14213d;
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: #f4d35e;
+  color: #14213d;
+}
+
+.prose-mail {
+  color: rgba(20, 33, 61, 0.72);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.prose-mail p {
+  margin: 0 0 1.2rem;
+}
+
+.prose-mail strong {
+  color: #14213d;
+  font-weight: 900;
+}
+
+.prose-mail a {
+  color: #0f766e;
+  font-weight: 900;
+}
+
+.prose-mail ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+.prose-mail li {
+  margin: 0.4rem 0;
+}
+
+.prose-mail h2,
+.prose-mail h3 {
+  color: #14213d;
+  font-family: var(--font-display);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 1.4rem 0 0.65rem;
+}
+
+.prose-mail h2 {
+  font-size: 1.5rem;
+}
+
+.prose-mail h3 {
+  font-size: 1.2rem;
+}
+
+.prose-mail ol {
+  margin: 1rem 0;
+  padding-left: 1.35rem;
+}
+
+.prose-mail ol li {
+  margin: 0.5rem 0;
+}
